@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "700226995625",
+    "firebase_url": "https://united-proposal-default-rtdb.firebaseio.com",
+    "project_id": "united-proposal",
+    "storage_bucket": "united-proposal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700226995625:android:a307c20bc626ebdaa930b8",
+        "android_client_info": {
+          "package_name": "com.zoom.united_proposals_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfahd9CH51ddnNVuwonxPdyPbizW4Ec4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

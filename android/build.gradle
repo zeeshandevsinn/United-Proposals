@@ -1,0 +1,107 @@
+buildscript {
+    
+    ext.kotlin_version = '1.8.22'
+    repositories {
+        
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+
+// buildscript {
+//     ext.kotlin_version = '1.7.10'
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+
+//     dependencies {
+        
+//         classpath 'com.android.tools.build:gradle:3.5.4'
+//         classpath 'com.google.gms:google-services:4.3.13'
+//         // classpath 'com.android.tools.build:gradle:7.3.0'
+//         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//         // classpath 'com.google.gms:google-services:3.0.0'
+//     }
+// }
+
+// allprojects {
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+// }
+
+// rootProject.buildDir = '../build'
+// subprojects {
+//     project.buildDir = "${rootProject.buildDir}/${project.name}"
+// }
+// subprojects {
+//     project.evaluationDependsOn(':app')
+// }
+
+// tasks.register("clean", Delete) {
+//     delete rootProject.buildDir
+// }
+// buildscript {
+//     ext.kotlin_version = '1.7.10'
+//     ext.gms_version = '4.3.13'
+
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+
+//     dependencies {
+//         classpath 'com.android.tools.build:gradle:7.0.0'// Use dynamic version
+//         classpath "com.google.gms:google-services:$gms_version"
+//         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//     }
+// }
+
+// allprojects {
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+// }
+
+// rootProject.buildDir = '../build'
+// subprojects {
+//     project.buildDir = "${rootProject.buildDir}/${project.name}"
+// }
+
+// subprojects {
+//     project.evaluationDependsOn(':app')
+// }
+
+// tasks.register("clean", Delete) {
+//     delete rootProject.buildDir
+// }
+

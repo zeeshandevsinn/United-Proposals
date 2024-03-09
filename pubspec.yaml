@@ -1,0 +1,95 @@
+name: united_proposals_app
+description: Find your perfect match with our Life Partner Finder app
+
+publish_to: 'none' 
+
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  url_launcher:
+  firebase_messaging: 
+  cloud_firestore:
+  cupertino_icons:
+  provider:
+  image_picker:
+  sizer:
+  get:
+  intl:
+  bot_toast:
+  dot_navigation_bar:
+  hidden_drawer_menu:
+  pin_code_fields:
+  cached_network_image:
+  google_fonts:
+  csc_picker:
+  image_cropper:
+  syncfusion_flutter_sliders:
+  syncfusion_flutter_core:
+  flutter_slidable:
+  flutter_launcher_icons:
+  intl_phone_number_input:
+  http:
+  firebase_core:
+  firebase_auth:
+  firebase_storage:
+  fluttertoast:
+  firebase_database:
+  connectivity_plus:
+  geolocator:
+  geocoding:
+  permission_handler:
+  shared_preferences:
+  location:
+  font_awesome_flutter: ^10.7.0
+flutter_icons:
+  android: true
+  ios: true
+  web: true
+  image_path: "assets/images/logo.png"
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_lints: ^3.0.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
